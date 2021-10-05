@@ -23,8 +23,8 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       
       - name: build binaries
-        run: ./$GITHUB_WORKSPACE/build.sh
+        run: ./build.sh
       
       - name: Test with pytest
         run: |
-          $GITHUB_WORKSPACE/builder/test
+          builder/test
