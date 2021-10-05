@@ -7,5 +7,6 @@ docker container run                                \
     --user $(id -u):$(id -g)                        \
     --rm                                            \
     --name build_perfspect                          \
+    --memory-swap -1                                \
     perfspect_builder:v1                            \
     build
