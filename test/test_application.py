@@ -24,7 +24,7 @@ def _run_command(command, cwd=""):
     return stdout, stderr, retcode
 
 def _test_run_regex(
-    command, expected_retcode, capsys, stdout_regex=None, stderr_regex=None, regex_flags=0, cwd="perfspect" 
+    command, expected_retcode, capsys, stdout_regex=None, stderr_regex=None, regex_flags=0, cwd="."
 ):
 
     stdout, stderr, retcode = _run_command(command, cwd)
