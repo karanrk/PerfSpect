@@ -1,5 +1,8 @@
+[![Build](https://github.com/karanrk/PerfSpect/tree/karanrk-pylint/.github/workflows/badge.svg)](https://github.com/karanrk/PerfSpect/tree/karanrk-pylint/.github/workflows/build.yml)
+[![License](https://img.shields.io/badge/License-BSD--3-blue)](https://github.com/karanrk/PerfSpect/blob/karanrk-pylint/LICENSE)
 
 # PerfSpect
+================
 
 PerfSpect is a system performance characterization tool based on linux perf targeting Intel microarchitectures.
 The tool has two parts 
