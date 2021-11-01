@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 # if using proxy please uncomment and edit proxy config below
 #ENV http_proxy <http_proxy:port>
 #ENV https_proxy <https_proxy:port>
