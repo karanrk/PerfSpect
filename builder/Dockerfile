@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:16.04
 # if using proxy please uncomment and edit proxy config below
 #ENV http_proxy <http_proxy:port>
 #ENV https_proxy <https_proxy:port>
@@ -42,7 +42,7 @@ RUN rm -rf /usr/lib/python3/dist-packages/yaml
 RUN rm -rf /usr/lib/python3/dist-packages/PyYAML-*
 RUN pip3 install PyYaml>=5.1.2
 RUN pip3 install pandas
-RUN pip3 install pyinstaller
+RUN pip3 install pyinstaller==4.5.1
 RUN pip3 install black
 RUN pip3 install bandit
 RUN pip3 install flake8
