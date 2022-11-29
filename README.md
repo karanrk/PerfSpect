@@ -8,8 +8,8 @@ The tool has two parts
 1. perf collection to collect underlying PMU (Performance Monitoring Unit) counters
 2. post processing that generates csv output of performance metrics.
 
-![PerfSpect TMA](images/tma_os.JPG "perfspect-tma")
-![PerfSpect BS](images/basic-readme_os.JPG "perfspect-bs")
+![PerfSpect TMA](images/tma.JPG "perfspect-tma")
+![PerfSpect BS](images/basic_stats.JPG "perfspect-bs")
 
 ## Getting Started
 
