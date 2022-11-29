@@ -19,14 +19,15 @@ The tool has two parts
 
 ## Building binaries from source code
 
-### pre-requisites
+### Containerized build
+#### pre-requisites
   1. Install docker
   2. Ensure docker commands execute without sudo (for example - `docker run hello-world` runs successfully)
 
-### build binaries
-
 execute build.sh
 `./build.sh`
+### Non-containerized build
+`./non_container_build.sh`
 
 On successful build, binaries will be created in "dist" folder
 
@@ -61,6 +62,11 @@ Options:
   --dryrun (Test if Performance Monitoring Counters are in-use, and collect stats for 10sec)
   
   --metadata (collect system info only, does not run perf)
+
+  -csp CLOUD, --cloud CLOUD (Name of the Cloud Service Provider(ex- AWS), if collecting on cloud instances)
+
+  -ct CLOUDTYPE, --cloudtype CLOUDTYPE (Instance type: Options include - VM/BM depending on the instance if it's baremetal or virtual system)
+
   ```
 #### Examples
 1. sudo ./perf-collect (collect PMU counters using predefined architecture specific event file until collection is terminated)
@@ -120,6 +126,8 @@ required arguments:
 2. Current version supports Intel Icelake, Cascadelake, Skylake and Broadwell microarchitectures only.
 3. Perf collection overhead will increase with increase in number of counters and/or dump interval. Using the right perf multiplexing (check perf-collection.py Notes for more details) interval to reduce overhead
 4. If you run into locale issues - `UnicodeDecodeError: 'ascii' codec can't decode byte 0xc2 in position 4519: ordinal not in range(128)`, more likely the locales needs to be set appropriately. You could also try running post-process step with `LC_ALL=C.UTF-8 LANG=C.UTF-8 ./perf-postprocess -r result.csv`
+
+Special thanks to Vaishali Karanth for her fantastic contributions to the project.
 
 ## How to contribute
 Create a pull request on github.com/intel/PerfSpect with your patch. Please make sure your patch is building without errors. A maintainer will contact you if there are questions or concerns.
