@@ -10,7 +10,7 @@ The tool has two parts
 
 <!-- ![PerfSpect TMA](images/tma.JPG "perfspect-tma") -->
 <!-- ![PerfSpect BS](images/basic_stats.JPG "perfspect-bs") -->
-![PerfSpect demo](https://github.com/karanrk/PerfSpect/tree/master/images/perf-demo.mp4 "demo")
+https://user-images.githubusercontent.com/5321018/205148669-9569162b-ec97-425d-87e7-54d7e64f42b7.mp4
 
 ## Getting Started
 
